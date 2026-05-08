@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EMMS Class of 2024 – Yearbook</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--green:#1a6b2f;--gl:#2d9e4a;--gd:#0e4019;--red:#c0272d;--rl:#e03030;--gold:#c9a227;--gol:#f0c14b;--cream:#fdf8ef;--cd:#f3ead7;--dark:#1a1208;--text:#2c1f0a;--tl:#6b5535;--wa:#25D366;--wad:#128C7E;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Crimson Pro',Georgia,serif;background:var(--cream);color:var(--text);min-height:100vh;overflow-x:hidden;}
+body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellipse 80% 60% at 10% 20%,rgba(26,107,47,.07) 0%,transparent 60%),radial-gradient(ellipse 60% 80% at 90% 80%,rgba(192,39,45,.05) 0%,transparent 60%),url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23c9a227' fill-opacity='0.035'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/svg%3E");pointer-events:none;z-index:0;}
+
+/* HEADER */
+.header{position:relative;background:linear-gradient(135deg,var(--gd) 0%,var(--green) 50%,var(--gd) 100%);overflow:hidden;box-shadow:0 4px 30px rgba(0,0,0,.3);}
+.header::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(45deg,transparent,transparent 10px,rgba(255,255,255,.015) 10px,rgba(255,255,255,.015) 20px);}
+.gs{height:6px;background:linear-gradient(90deg,var(--red),var(--gold),var(--gol),var(--gold),var(--red));}
+.hi{display:flex;align-items:center;justify-content:space-between;padding:22px 48px;position:relative;z-index:1;flex-wrap:wrap;gap:14px;}
+.lw{display:flex;align-items:center;gap:18px;}
+.lc{width:82px;height:82px;background:white;border-radius:50%;border:4px solid var(--gold);display:flex;align-items:center;justify-content:center;overflow:hidden;box-shadow:0 0 0 3px var(--gd),0 4px 20px rgba(0,0,0,.4);flex-shrink:0;}
+.lc img{width:100%;height:100%;object-fit:contain;padding:3px;}
+.sn .ar{font-family:'Amiri',serif;font-size:16px;color:var(--gol);direction:rtl;display:block;margin-bottom:3px;}
+.sn h1{font-family:'Playfair Display',serif;font-size:25px;font-weight:900;letter-spacing:2px;text-transform:uppercase;color:white;line-height:1;}
+.sn .mo{font-style:italic;font-size:13px;color:var(--gol);letter-spacing:2px;margin-top:5px;display:block;}
+.yb{text-align:right;}
+.yb .yn{background:var(--red);border:2px solid var(--gold);padding:8px 20px;font-family:'Playfair Display',serif;font-size:28px;font-weight:900;color:white;display:block;letter-spacing:3px;margin-bottom:4px;}
+.yb .ys{font-size:11px;letter-spacing:4px;text-transform:uppercase;color:var(--gol);display:block;}
+
+/* NAV */
+.nav{background:var(--gd);display:flex;justify-content:center;flex-wrap:wrap;z-index:10;box-shadow:0 2px 10px rgba(0,0,0,.2);}
+.nav a{color:rgba(255,255,255,.8);text-decoration:none;padding:13px 20px;font-family:'Crimson Pro',serif;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;transition:all .3s;border-bottom:3px solid transparent;font-weight:600;cursor:pointer;}
+.nav a:hover,.nav a.active{color:var(--gol);border-bottom-color:var(--gold);background:rgba(255,255,255,.05);}
+
+/* HERO */
+.hero{position:relative;z-index:1;display:grid;grid-template-columns:1fr 400px;min-height:360px;overflow:hidden;}
+.hl{background:linear-gradient(160deg,var(--gd) 0%,#1f5c30 100%);padding:52px 48px;display:flex;flex-direction:column;justify-content:center;}
+.ht{font-style:italic;color:var(--gol);font-size:16px;letter-spacing:3px;margin-bottom:8px;animation:fu .8s ease both;}
+.hh{font-family:'Playfair Display',serif;font-size:50px;font-weight:900;color:white;line-height:1.05;margin-bottom:14px;animation:fu .8s .1s ease both;}
+.hh span{color:var(--gol);}
+.hd{color:rgba(255,255,255,.75);font-size:16px;line-height:1.7;max-width:370px;margin-bottom:28px;animation:fu .8s .2s ease both;}
+.hbs{display:flex;gap:12px;flex-wrap:wrap;animation:fu .8s .3s ease both;}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 26px;font-family:'Playfair Display',serif;font-size:13px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;border-radius:2px;cursor:pointer;text-decoration:none;transition:all .3s;border:2px solid transparent;}
+.br{background:linear-gradient(135deg,var(--red),var(--rl));color:white;box-shadow:0 4px 18px rgba(192,39,45,.4);}
+.br:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(192,39,45,.5);}
+.bo{background:transparent;color:var(--gol);border-color:var(--gold);}
+.bo:hover{background:var(--gold);color:var(--dark);transform:translateY(-2px);}
+.hr-sec{position:relative;background:var(--cd);overflow:hidden;}
+.hr-sec::before{content:'';position:absolute;inset:0;background:linear-gradient(to right,var(--gd) 0%,transparent 35%);z-index:1;}
+.hi2{width:100%;height:100%;object-fit:cover;object-position:top;display:block;filter:saturate(.9);}
+.hl2{position:absolute;bottom:20px;left:0;background:var(--red);border-left:4px solid var(--gold);color:white;padding:9px 18px;font-family:'Playfair Display',serif;font-size:12px;font-weight:700;letter-spacing:1px;z-index:2;}
+.dr{position:absolute;top:22px;left:22px;width:110px;height:110px;border:2px solid rgba(201,162,39,.25);border-radius:50%;z-index:2;animation:sp 25s linear infinite;}
+
+/* STATS */
+.ss{background:var(--gold);display:flex;justify-content:center;flex-wrap:wrap;position:relative;z-index:5;box-shadow:0 4px 15px rgba(0,0,0,.2);}
+.st{padding:16px 40px;text-align:center;border-right:1px solid rgba(255,255,255,.3);}
+.st:last-child{border-right:none;}
+.sn2{font-family:'Playfair Display',serif;font-size:28px;font-weight:900;color:var(--dark);line-height:1;display:block;}
+.sl{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--gd);font-weight:600;margin-top:3px;display:block;}
+
+/* MAIN */
+.main{position:relative;z-index:2;max-width:1240px;margin:0 auto;padding:52px 36px;}
+.sh{text-align:center;margin-bottom:40px;}
+.sh .ey{font-style:italic;color:var(--red);font-size:15px;letter-spacing:3px;display:block;margin-bottom:6px;}
+.sh h2{font-family:'Playfair Display',serif;font-size:34px;font-weight:900;color:var(--gd);position:relative;display:inline-block;}
+.sh h2::after{content:'';position:absolute;bottom:-10px;left:50%;transform:translateX(-50%);width:52px;height:3px;background:linear-gradient(90deg,var(--gold),var(--red));}
+
+/* WA BANNER */
+.wab{background:linear-gradient(135deg,var(--wad),var(--wa));border-radius:4px;padding:26px 32px;display:flex;align-items:center;justify-content:space-between;gap:18px;margin-bottom:48px;box-shadow:0 6px 30px rgba(37,211,102,.25);animation:fu .8s .3s ease both;flex-wrap:wrap;}
+.wal{display:flex;align-items:center;gap:18px;}
+.wai{font-size:48px;line-height:1;}
+.wat h3{font-family:'Playfair Display',serif;font-size:21px;font-weight:900;color:white;margin-bottom:4px;}
+.wat p{color:rgba(255,255,255,.85);font-size:14px;line-height:1.5;}
+.wals{display:flex;gap:10px;flex-wrap:wrap;}
+.bwa{display:inline-flex;align-items:center;gap:8px;background:white;color:var(--wad);padding:11px 20px;border-radius:25px;font-family:'Playfair Display',serif;font-size:12px;font-weight:700;letter-spacing:1px;text-decoration:none;transition:all .3s;}
+.bwa:hover{background:var(--gd);color:white;transform:translateY(-2px);}
+.bwao{background:transparent;color:white;border:2px solid rgba(255,255,255,.6);border-radius:25px;padding:10px 20px;font-family:'Playfair Display',serif;font-size:12px;font-weight:700;letter-spacing:1px;cursor:pointer;transition:all .3s;}
+.bwao:hover{background:rgba(255,255,255,.15);}
+
+/* FILTER BAR */
+.fb{background:white;border-radius:4px;padding:22px 26px;box-shadow:0 4px 20px rgba(0,0,0,.08);margin-bottom:44px;border-left:5px solid var(--green);animation:fu .8s .4s ease both;}
+.fb h3{font-family:'Playfair Display',serif;font-size:17px;color:var(--gd);margin-bottom:16px;display:flex;align-items:center;gap:8px;}
+.fg{display:grid;grid-template-columns:2fr 1fr 1fr 1fr auto auto;gap:10px;align-items:end;}
+.fgrp{display:flex;flex-direction:column;gap:5px;}
+.fgrp label{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--tl);font-weight:700;font-family:'Playfair Display',serif;}
+.fgrp input,.fgrp select{padding:9px 12px;border:2px solid var(--cd);background:var(--cream);font-family:'Crimson Pro',serif;font-size:14px;color:var(--text);outline:none;transition:border-color .3s;border-radius:2px;}
+.fgrp input:focus,.fgrp select:focus{border-color:var(--green);}
+.bfl{background:var(--green);color:white;border:none;padding:9px 20px;font-family:'Playfair Display',serif;font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;cursor:pointer;border-radius:2px;transition:all .3s;white-space:nowrap;height:40px;}
+.bfl:hover{background:var(--gd);}
+.brs{background:transparent;color:var(--tl);border:2px solid var(--cd);padding:9px 14px;font-family:'Playfair Display',serif;font-size:12px;font-weight:600;cursor:pointer;border-radius:2px;transition:all .3s;height:40px;}
+.brs:hover{border-color:var(--red);color:var(--red);}
+
+/* CLASSMATES GRID */
+.cg{display:grid;grid-template-columns:repeat(auto-fill,minmax(255px,1fr));gap:20px;margin-bottom:56px;animation:fu .8s .5s ease both;}
+.sc{background:white;border-radius:3px;overflow:hidden;box-shadow:0 2px 16px rgba(0,0,0,.07);transition:all .35s;cursor:pointer;border-bottom:4px solid var(--gold);}
+.sc:hover{transform:translateY(-6px);box-shadow:0 14px 40px rgba(0,0,0,.13);}
+.sc:hover .si{transform:scale(1.04);}
+.sw{height:195px;overflow:hidden;position:relative;background:var(--cd);}
+.si{width:100%;height:100%;object-fit:cover;object-position:top;transition:transform .4s;filter:saturate(.9);}
+.sp{width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:60px;background:linear-gradient(135deg,#e8dcc8,var(--cd));}
+.hb{position:absolute;top:10px;left:10px;padding:4px 10px;font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:white;font-family:'Playfair Display',serif;}
+.stb{position:absolute;top:10px;right:10px;background:rgba(0,0,0,.55);color:white;padding:3px 8px;font-size:10px;letter-spacing:1px;font-family:'Crimson Pro',serif;}
+.sb{padding:16px;}
+.sname{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--gd);margin-bottom:3px;}
+.scls{font-size:12px;color:var(--tl);letter-spacing:.5px;margin-bottom:9px;}
+.sbio{font-size:13px;color:var(--tl);line-height:1.5;margin-bottom:11px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}
+.sco{display:flex;gap:7px;flex-wrap:wrap;border-top:1px solid var(--cd);padding-top:11px;}
+.sco a{display:inline-flex;align-items:center;gap:4px;font-size:11px;font-weight:600;letter-spacing:.5px;text-decoration:none;padding:5px 9px;border-radius:20px;transition:all .25s;}
+.cp{background:#e8f5e9;color:var(--gd);}
+.cp:hover{background:var(--green);color:white;}
+.cwa{background:#e8faf0;color:var(--wad);}
+.cwa:hover{background:var(--wa);color:white;}
+.cpr{background:var(--cd);color:var(--tl);}
+.cpr:hover{background:var(--gd);color:white;}
+
+/* PROFILE MODAL */
+.mo{display:none;position:fixed;inset:0;background:rgba(14,64,25,.88);z-index:1000;align-items:center;justify-content:center;backdrop-filter:blur(5px);padding:16px;}
+.mo.active{display:flex;}
+.mb{background:var(--cream);width:100%;max-width:630px;border-radius:3px;overflow:hidden;box-shadow:0 24px 70px rgba(0,0,0,.45);animation:mi .4s ease;max-height:92vh;display:flex;flex-direction:column;}
+.mh{background:linear-gradient(135deg,var(--gd),var(--green));padding:26px 30px;position:relative;display:flex;align-items:center;gap:18px;flex-shrink:0;}
+.mav{width:76px;height:76px;border-radius:50%;border:3px solid var(--gold);overflow:hidden;flex-shrink:0;background:var(--cd);display:flex;align-items:center;justify-content:center;font-size:32px;}
+.mav img{width:100%;height:100%;object-fit:cover;object-position:top;}
+.mt h3{font-family:'Playfair Display',serif;font-size:21px;color:white;font-weight:900;}
+.mt p{color:var(--gol);font-size:13px;font-style:italic;margin-top:3px;}
+.cx{position:absolute;top:12px;right:14px;background:rgba(255,255,255,.2);border:none;color:white;width:28px;height:28px;border-radius:50%;cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center;transition:.2s;}
+.cx:hover{background:rgba(255,255,255,.35);}
+.mbod{padding:26px 30px;overflow-y:auto;}
+.ig{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:18px;}
+.ii{background:white;padding:13px 15px;border-radius:2px;border-left:3px solid var(--gold);}
+.ii label{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--tl);font-weight:700;font-family:'Playfair Display',serif;display:block;margin-bottom:4px;}
+.ii span{font-size:14px;color:var(--text);font-weight:600;}
+.ii a{font-size:14px;color:var(--green);font-weight:600;text-decoration:none;}
+.ii a:hover{color:var(--red);}
+.bs{background:white;padding:16px;border-radius:2px;border-left:3px solid var(--green);margin-bottom:18px;}
+.bs h4{font-family:'Playfair Display',serif;font-size:13px;font-weight:700;color:var(--gd);letter-spacing:1px;text-transform:uppercase;margin-bottom:9px;}
+.bs p{font-size:15px;line-height:1.7;color:var(--tl);font-style:italic;}
+.ma{display:flex;gap:10px;flex-wrap:wrap;}
+.bwf{flex:1;display:flex;align-items:center;justify-content:center;gap:9px;background:var(--wa);color:white;padding:12px 18px;border-radius:3px;font-family:'Playfair Display',serif;font-size:13px;font-weight:700;letter-spacing:1px;text-decoration:none;transition:all .3s;}
+.bwf:hover{background:var(--wad);transform:translateY(-1px);}
+.bcl{flex:1;display:flex;align-items:center;justify-content:center;gap:9px;background:var(--green);color:white;padding:12px 18px;border-radius:3px;font-family:'Playfair Display',serif;font-size:13px;font-weight:700;letter-spacing:1px;text-decoration:none;transition:all .3s;}
+.bcl:hover{background:var(--gd);transform:translateY(-1px);}
+
+/* LOGIN MODAL */
+.lo{display:none;position:fixed;inset:0;background:rgba(14,64,25,.92);z-index:2000;align-items:center;justify-content:center;backdrop-filter:blur(5px);}
+.lo.active{display:flex;}
+.lm{background:var(--cream);width:430px;border-radius:3px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.4);animation:mi .4s ease;}
+.lmh{background:linear-gradient(135deg,var(--gd),var(--green));padding:28px;text-align:center;position:relative;}
+.lmh h3{font-family:'Playfair Display',serif;color:white;font-size:23px;font-weight:900;margin-bottom:4px;}
+.lmh p{color:var(--gol);font-style:italic;font-size:14px;}
+.lmb{padding:32px;}
+.lmfg{margin-bottom:16px;}
+.lmfg label{display:block;font-family:'Playfair Display',serif;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--gd);margin-bottom:7px;}
+.lmfg input{width:100%;padding:11px 14px;border:2px solid var(--cd);background:white;font-family:'Crimson Pro',serif;font-size:15px;color:var(--text);outline:none;transition:border-color .3s;}
+.lmfg input:focus{border-color:var(--green);}
+.bls{width:100%;padding:13px;background:linear-gradient(135deg,var(--red),var(--rl));color:white;border:none;font-family:'Playfair Display',serif;font-size:15px;font-weight:700;letter-spacing:2px;text-transform:uppercase;cursor:pointer;transition:all .3s;box-shadow:0 4px 15px rgba(192,39,45,.3);margin-bottom:14px;}
+.bls:hover{transform:translateY(-1px);box-shadow:0 8px 25px rgba(192,39,45,.4);}
+.lmft{text-align:center;color:var(--tl);font-size:14px;}
+.lmft a{color:var(--green);font-weight:600;text-decoration:none;cursor:pointer;}
+
+/* REGISTER MODAL */
+.rm{background:var(--cream);width:100%;max-width:570px;border-radius:3px;overflow:hidden;box-shadow:0 24px 70px rgba(0,0,0,.45);animation:mi .4s ease;max-height:92vh;display:flex;flex-direction:column;}
+.rmb{padding:28px 32px;overflow-y:auto;}
+.rfg{margin-bottom:15px;}
+.rfg label{display:block;font-family:'Playfair Display',serif;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--gd);margin-bottom:7px;}
+.rfg input,.rfg select,.rfg textarea{width:100%;padding:10px 13px;border:2px solid var(--cd);background:white;font-family:'Crimson Pro',serif;font-size:14px;color:var(--text);outline:none;transition:border-color .3s;}
+.rfg input:focus,.rfg select:focus,.rfg textarea:focus{border-color:var(--green);}
+.rfg textarea{resize:vertical;min-height:78px;}
+.tc{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+.brs2{width:100%;padding:13px;background:linear-gradient(135deg,var(--green),var(--gl));color:white;border:none;font-family:'Playfair Display',serif;font-size:15px;font-weight:700;letter-spacing:2px;text-transform:uppercase;cursor:pointer;transition:all .3s;box-shadow:0 4px 15px rgba(26,107,47,.3);margin-top:6px;}
+.brs2:hover{transform:translateY(-1px);box-shadow:0 8px 25px rgba(26,107,47,.4);}
+
+/* WA GROUPS GRID */
+.wgg{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:18px;margin-bottom:56px;animation:fu .8s ease both;}
+.wgc{background:white;border-radius:3px;overflow:hidden;box-shadow:0 2px 16px rgba(0,0,0,.07);border-bottom:4px solid var(--wa);}
+.wgh{background:linear-gradient(135deg,var(--wad),var(--wa));padding:18px 20px;display:flex;align-items:center;gap:12px;}
+.wgh .wi{font-size:28px;line-height:1;}
+.wgh .wt{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:white;}
+.wgh .wc{color:rgba(255,255,255,.8);font-size:12px;margin-top:2px;}
+.wgb{padding:14px 20px;}
+.wgb p{font-size:13px;color:var(--tl);line-height:1.6;margin-bottom:12px;}
+
+/* EMPTY */
+.es{text-align:center;padding:56px 36px;color:var(--tl);font-family:'Playfair Display',serif;}
+.es .ei{font-size:52px;margin-bottom:14px;}
+.es p{font-size:19px;font-style:italic;}
+
+/* FOOTER */
+.footer{background:var(--gd);color:rgba(255,255,255,.6);text-align:center;padding:26px;font-size:14px;font-family:'Crimson Pro',serif;letter-spacing:1px;position:relative;z-index:5;}
+.footer .fl{font-family:'Playfair Display',serif;color:var(--gol);font-size:16px;font-weight:700;letter-spacing:3px;margin-bottom:5px;display:block;}
+.footer .fm{color:var(--gold);font-style:italic;font-size:15px;}
+
+/* HOUSE COLORS */
+.hGreen{background:var(--green);}
+.hRed{background:var(--red);}
+.hBlue{background:#1565c0;}
+.hYellow{background:#e6a800;}
+.hPurple{background:#6a1b9a;}
+.hOrange{background:#e65100;}
+
+/* ANIMATIONS */
+@keyframes fu{from{opacity:0;transform:translateY(22px);}to{opacity:1;transform:translateY(0);}}
+@keyframes mi{from{opacity:0;transform:scale(.92) translateY(-18px);}to{opacity:1;transform:scale(1) translateY(0);}}
+@keyframes sp{from{transform:rotate(0deg);}to{transform:rotate(360deg);}}
+
+@media(max-width:900px){
+  .hero{grid-template-columns:1fr;}
+  .hr-sec{height:240px;}
+  .fg{grid-template-columns:1fr 1fr;}
+  .wab{flex-direction:column;align-items:flex-start;}
+  .hi{padding:16px 20px;}
+  .hl{padding:34px 22px;}
+  .hh{font-size:36px;}
+  .ig{grid-template-columns:1fr;}
+  .tc{grid-template-columns:1fr;}
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="hi">
+    <div class="lw">
+      <div class="lc">
+        <img src="/mnt/user-data/uploads/166237.jpg" alt="EMMS Logo" onerror="this.style.display='none'">
+      </div>
+      <div class="sn">
+        <span class="ar">المدرسة المصرية الحديثة النموذجية</span>
+        <h1>Egyptian Modern<br>Model School</h1>
+        <span class="mo">Education Is Light · العلم نور</span>
+      </div>
+    </div>
+    <div class="yb">
+      <span class="yn">2024</span>
+      <span class="ys">Class Yearbook</span>
+    </div>
+  </div>
+  <div class="gs"></div>
+</header>
+
+<!-- NAV -->
+<nav class="nav">
+  <a class="active" onclick="showSec('dash')">🏠 Dashboard</a>
+  <a onclick="showSec('cls')">👥 Classmates</a>
+  <a onclick="showSec('wa')">💬 WhatsApp Groups</a>
+  <a onclick="openLogin()">👤 My Profile</a>
+  <a onclick="openLogin()">⬆️ Upload Photo</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hl">
+    <span class="ht">Welcome to the</span>
+    <h2 class="hh">Class of <span>2024</span></h2>
+    <p class="hd">Relive every memory, reconnect with classmates, share your contacts and celebrate the year that shaped you. Your EMMS 2024 story, preserved forever.</p>
+    <div class="hbs">
+      <a class="btn br" onclick="openLogin()">✦ Sign In</a>
+      <a class="btn bo" onclick="openRegister()">Register Now</a>
+    </div>
+  </div>
+  <div class="hr-sec">
+    <div class="dr"></div>
+    <img src="/mnt/user-data/uploads/183933.jpg" class="hi2" alt="EMMS Class of 2024" onerror="this.style.display='none'">
+    <div class="hl2">Class of 2024 · EMMS Nigeria 🇳🇬</div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="ss">
+  <div class="st"><span class="sn2" data-t="248">0</span><span class="sl">Students</span></div>
+  <div class="st"><span class="sn2" data-t="6">0</span><span class="sl">Houses</span></div>
+  <div class="st"><span class="sn2" data-t="12">0</span><span class="sl">Sets</span></div>
+  <div class="st"><span class="sn2" data-t="8">0</span><span class="sl">WA Groups</span></div>
+</div>
+
+<!-- MAIN -->
+<main class="main">
+
+  <!-- ===== DASHBOARD ===== -->
+  <div id="sec-dash">
+
+    <!-- WhatsApp Banner -->
+    <div class="wab">
+      <div class="wal">
+        <div class="wai">💬</div>
+        <div class="wat">
+          <h3>Stay Connected — Join Your Class WhatsApp Group</h3>
+          <p>Don't lose touch! Join your house, set, or the general EMMS 2024 group. Stay updated, share memories, and keep the bond alive.</p>
+        </div>
+      </div>
+      <div class="wals">
+        <a class="bwa" href="https://chat.whatsapp.com/J4QkqmIS3hL42Wz8Uy6JTR" target="_blank">📲 General Group</a>
+        <button class="bwao" onclick="showSec('wa')">View All Groups →</button>
+      </div>
+    </div>
+
+    <!-- Filter -->
+    <div class="fb">
+      <h3>🔍 Find a Classmate</h3>
+      <div class="fg">
+        <div class="fgrp"><label>Name / Keyword</label><input id="fn" type="text" placeholder="Search name, address, bio…" oninput="doFilter()"></div>
+        <div class="fgrp"><label>House</label>
+          <select id="fh" onchange="doFilter()">
+            <option value="">All Houses</option>
+            <option value="Green">Green</option><option value="Red">Red</option>
+            <option value="Blue">Blue</option><option value="Yellow">Yellow</option>
+            <option value="Purple">Purple</option><option value="Orange">Orange</option>
+          </select>
+        </div>
+        <div class="fgrp"><label>Set / Class</label>
+          <select id="fs" onchange="doFilter()">
+            <option value="">All Sets</option>
+            <option value="SS3A">SS3 A</option><option value="SS3B">SS3 B</option>
+            <option value="SS3C">SS3 C</option><option value="SS3D">SS3 D</option>
+          </select>
+        </div>
+        <div class="fgrp"><label>Sort By</label>
+          <select id="fso" onchange="doFilter()">
+            <option value="name">Name A–Z</option>
+            <option value="house">House</option>
+            <option value="set">Set</option>
+          </select>
+        </div>
+        <button class="bfl" onclick="doFilter()">Search</button>
+        <button class="brs" onclick="resetF()">✕ Clear</button>
+      </div>
+    </div>
+
+    <div class="sh"><span class="ey">Class of 2024 · EMMS Nigeria</span><h2>Your Classmates</h2></div>
+    <div class="cg" id="grid1"></div>
+    <div id="empty1" class="es" style="display:none;"><div class="ei">🔍</div><p>No classmates match your filters.</p></div>
+  </div>
+
+  <!-- ===== CLASSMATES FULL DIR ===== -->
+  <div id="sec-cls" style="display:none;">
+    <div class="sh"><span class="ey">Full Directory</span><h2>All Classmates – 2024</h2></div>
+    <div class="fb" style="margin-bottom:34px;">
+      <div class="fg">
+        <div class="fgrp"><label>Search</label><input id="fn2" type="text" placeholder="Name, address, bio, phone…" oninput="doFilter2()"></div>
+        <div class="fgrp"><label>House</label>
+          <select id="fh2" onchange="doFilter2()">
+            <option value="">All Houses</option>
+            <option value="Green">Green</option><option value="Red">Red</option>
+            <option value="Blue">Blue</option><option value="Yellow">Yellow</option>
+            <option value="Purple">Purple</option><option value="Orange">Orange</option>
+          </select>
+        </div>
+        <div class="fgrp"><label>Set</label>
+          <select id="fs2" onchange="doFilter2()">
+            <option value="">All Sets</option>
+            <option value="SS3A">SS3 A</option><option value="SS3B">SS3 B</option>
+            <option value="SS3C">SS3 C</option><option value="SS3D">SS3 D</option>
+          </select>
+        </div>
+        <div class="fgrp"><label>Sort</label>
+          <select id="fso2" onchange="doFilter2()">
+            <option value="name">Name A–Z</option>
+            <option value="house">House</option><option value="set">Set</option>
+          </select>
+        </div>
+        <button class="bfl" onclick="doFilter2()">Go</button>
+        <button class="brs" onclick="resetF2()">✕</button>
+      </div>
+    </div>
+    <div class="cg" id="grid2"></div>
+    <div id="empty2" class="es" style="display:none;"><div class="ei">🔍</div><p>No results found.</p></div>
+  </div>
+
+  <!-- ===== WHATSAPP GROUPS ===== -->
+  <div id="sec-wa" style="display:none;">
+    <div class="sh"><span class="ey">Stay Connected</span><h2>WhatsApp Groups – 2024</h2></div>
+    <div class="wgg" id="wgg"></div>
+
+    <!-- Add group -->
+    <div class="fb" style="margin-top:0;">
+      <h3>➕ Add a New Group</h3>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr auto;gap:10px;margin-top:12px;align-items:end;">
+        <div class="fgrp"><label>Group Name</label><input id="wgn" type="text" placeholder="e.g. Green House 2024"></div>
+        <div class="fgrp"><label>Invite Link</label><input id="wgl" type="text" placeholder="https://chat.whatsapp.com/…"></div>
+        <div class="fgrp"><label>Description (optional)</label><input id="wgd" type="text" placeholder="Short description"></div>
+        <button class="bfl" onclick="addGroup()" style="height:40px;">Add</button>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <span class="fl">EGYPTIAN MODERN MODEL SCHOOL</span>
+  <span class="fm">العلم نور · Education Is Light</span>
+  <p style="margin-top:9px;font-size:12px;letter-spacing:1px;">Class Yearbook 2024 · Nigeria 🇳🇬 × Egypt 🇪🇬</p>
+</footer>
+
+<!-- PROFILE MODAL -->
+<div class="mo" id="profMo" onclick="closePM(event)">
+  <div class="mb">
+    <div class="mh">
+      <button class="cx" onclick="document.getElementById('profMo').classList.remove('active')">✕</button>
+      <div class="mav" id="pmAv">🎓</div>
+      <div class="mt"><h3 id="pmName"></h3><p id="pmSub"></p></div>
+    </div>
+    <div class="mbod">
+      <div class="ig">
+        <div class="ii"><label>Full Name</label><span id="pmFull">—</span></div>
+        <div class="ii"><label>Set / Class</label><span id="pmSet">—</span></div>
+        <div class="ii"><label>House</label><span id="pmHouse">—</span></div>
+        <div class="ii"><label>Year</label><span>2024</span></div>
+        <div class="ii"><label>Phone Number</label><a id="pmPhone" href="#">—</a></div>
+        <div class="ii"><label>WhatsApp</label><a id="pmWa" href="#" target="_blank">Open Chat ↗</a></div>
+        <div class="ii" style="grid-column:1/-1;"><label>Home Address</label><span id="pmAddr">—</span></div>
+      </div>
+      <div class="bs"><h4>✦ Bio / About</h4><p id="pmBio">—</p></div>
+      <div class="ma">
+        <a id="pmWaBtn" href="#" target="_blank" class="bwf">💬 WhatsApp</a>
+        <a id="pmCallBtn" href="#" class="bcl">📞 Call</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- LOGIN MODAL -->
+<div class="lo" id="loginMo" onclick="closeLO(event)">
+  <div class="lm">
+    <div class="lmh">
+      <button class="cx" onclick="document.getElementById('loginMo').classList.remove('active')">✕</button>
+      <h3>Welcome Back</h3>
+      <p>Sign in to EMMS 2024 Yearbook</p>
+    </div>
+    <div class="lmb">
+      <div class="lmfg"><label>Username</label><input id="liu" type="text" placeholder="Your username"></div>
+      <div class="lmfg"><label>Password</label><input id="lip" type="password" placeholder="Your password"></div>
+      <button class="bls" onclick="doLogin()">Sign In →</button>
+      <div class="lmft">New student? <a onclick="closeLogin();openRegister();">Register here</a></div>
+    </div>
+  </div>
+</div>
+
+<!-- REGISTER MODAL -->
+<div class="mo" id="regMo" onclick="closeRegBg(event)">
+  <div class="rm">
+    <div class="mh" style="flex-direction:column;align-items:flex-start;gap:4px;">
+      <button class="cx" onclick="document.getElementById('regMo').classList.remove('active')">✕</button>
+      <h3 style="font-family:'Playfair Display',serif;font-size:21px;color:white;font-weight:900;">Create Your Yearbook Profile</h3>
+      <p style="color:var(--gol);font-style:italic;font-size:13px;">Class of 2024 — Egyptian Modern Model School</p>
+    </div>
+    <div class="rmb">
+      <div class="tc">
+        <div class="rfg"><label>Username</label><input id="ru" type="text" placeholder="Choose a username"></div>
+        <div class="rfg"><label>Password</label><input id="rp" type="password" placeholder="Create a password"></div>
+      </div>
+      <div class="rfg"><label>Full Name</label><input id="rname" type="text" placeholder="e.g. Abdullahi Ibrahim Musa"></div>
+      <div class="tc">
+        <div class="rfg"><label>Phone Number</label><input id="rphone" type="tel" placeholder="+234 800 000 0000"></div>
+        <div class="rfg"><label>WhatsApp Number</label><input id="rwa" type="tel" placeholder="+234 800 000 0000"></div>
+      </div>
+      <div class="rfg"><label>Home Address</label><input id="raddr" type="text" placeholder="Street, Area, City, State"></div>
+      <div class="tc">
+        <div class="rfg"><label>House</label>
+          <select id="rhouse">
+            <option value="">Select house</option>
+            <option value="Green">Green House</option><option value="Red">Red House</option>
+            <option value="Blue">Blue House</option><option value="Yellow">Yellow House</option>
+            <option value="Purple">Purple House</option><option value="Orange">Orange House</option>
+          </select>
+        </div>
+        <div class="rfg"><label>Set / Class</label>
+          <select id="rset">
+            <option value="">Select set</option>
+            <option value="SS3A">SS3 A</option><option value="SS3B">SS3 B</option>
+            <option value="SS3C">SS3 C</option><option value="SS3D">SS3 D</option>
+          </select>
+        </div>
+      </div>
+      <div class="rfg"><label>Bio / About You</label><textarea id="rbio" placeholder="Tell your classmates about yourself — interests, favourite memories, future plans…"></textarea></div>
+      <button class="brs2" onclick="doRegister()">✦ Join EMMS 2024 Yearbook</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// ===== DATA =====
+const STUDENTS = [
+  {id:1,user:"ahmad2024",name:"Ahmad Abdullahi",full:"Ahmad Abdullahi Musa",house:"Green",set:"SS3A",phone:"+234 803 123 4567",wa:"2348031234567",addr:"No. 12 Murtala Street, Kaduna South, Kaduna State",bio:"Passionate about science and technology. Dreams of studying medicine at ABU Zaria. Loves chess and debating. Class of 2024 forever! 🎓",img:"/mnt/user-data/uploads/183933.jpg"},
+  {id:2,user:"fatima2024",name:"Fatima Al-Hassan",full:"Fatima Al-Hassan Ibrahim",house:"Red",set:"SS3B",phone:"+234 806 234 5678",wa:"2348062345678",addr:"15 Usuman Faruk Road, Sokoto, Sokoto State",bio:"Mathematics lover and aspiring engineer. Class captain, choir member. Grateful for every memory at EMMS. 'Education Is Light!'",img:""},
+  {id:3,user:"ibrahim2024",name:"Ibrahim Yusuf",full:"Ibrahim Yusuf Sani",house:"Blue",set:"SS3A",phone:"+234 805 345 6789",wa:"2348053456789",addr:"Block 7, Tudun Wada GRA, Kano State",bio:"Football star and science student. EMMS 2024 is the best set to ever walk those halls. Shoutout to Mr. Bello! ⚽",img:""},
+  {id:4,user:"aisha2024",name:"Aisha Mohammed",full:"Aisha Mohammed Tukur",house:"Yellow",set:"SS3C",phone:"+234 808 456 7890",wa:"2348084567890",addr:"22 Tafawa Balewa Street, Bauchi, Bauchi State",bio:"Art and literature student. Editor of the school magazine. Proud Yellow House captain. The future belongs to those who believe! ✨",img:""},
+  {id:5,user:"usman2024",name:"Usman Danladi",full:"Usman Danladi Adamu",house:"Purple",set:"SS3D",phone:"+234 809 567 8901",wa:"2348095678901",addr:"Angwan Sarki, Minna, Niger State",bio:"Computer science enthusiast and debating team lead. EMMS taught me discipline and excellence. Proud class of 2024!",img:""},
+  {id:6,user:"zainab2024",name:"Zainab Garba",full:"Zainab Garba Umar",house:"Orange",set:"SS3B",phone:"+234 807 678 9012",wa:"2348076789012",addr:"Plot 33 Kofar Wambai, Kano Municipal, Kano State",bio:"Biology and chemistry whiz. Dream: becoming a pediatrician. EMMS 2024 — we made history. Allah bless us all! 🌿",img:""},
+];
+
+let WA_GROUPS = [
+  {name:"EMMS General 2024",link:"https://chat.whatsapp.com/J4QkqmIS3hL42Wz8Uy6JTR",emoji:"🏫",desc:"All graduating students. Announcements, reunion updates, general chat.",count:"~248 members"},
+  {name:"Green House 2024",link:"https://chat.whatsapp.com/",emoji:"🟢",desc:"Green House students only. House meetings, events and pride!",count:"~40 members"},
+  {name:"Red House 2024",link:"https://chat.whatsapp.com/",emoji:"🔴",desc:"Red House strong! Connect with your housemates.",count:"~38 members"},
+  {name:"Blue House 2024",link:"https://chat.whatsapp.com/",emoji:"🔵",desc:"Blue House pride forever. Sports, academics, unity.",count:"~42 members"},
+  {name:"SS3A Set Group",link:"https://chat.whatsapp.com/",emoji:"📚",desc:"Set A classmates — relive your classroom memories!",count:"~65 members"},
+  {name:"SS3B Set Group",link:"https://chat.whatsapp.com/",emoji:"📚",desc:"Set B forever! Chat with your deskmates and teachers' pets.",count:"~60 members"},
+  {name:"EMMS Sports & Games",link:"https://chat.whatsapp.com/",emoji:"⚽",desc:"Football, volleyball, athletics — keep the EMMS sporting spirit alive.",count:"Open group"},
+  {name:"EMMS Alumni Network",link:"https://chat.whatsapp.com/",emoji:"🎓",desc:"For all EMMS graduates — networking, opportunities, reunions.",count:"Open group"},
+];
+
+// ===== CARD RENDER =====
+function card(s){
+  const wl=s.wa?`https://wa.me/${s.wa}`:"#";
+  const pl=s.phone?`tel:${s.phone.replace(/\s/g,'')}`:"#";
+  return `<div class="sc" onclick="openProf(${s.id})">
+    <div class="sw">
+      ${s.img?`<img class="si" src="${s.img}" alt="${s.name}" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">`:''}
+      <div class="sp" style="${s.img?'display:none;':''}">🎓</div>
+      <div class="hb h${s.house}">${s.house} House</div>
+      <div class="stb">${s.set}</div>
+    </div>
+    <div class="sb">
+      <div class="sname">${s.name}</div>
+      <div class="scls">${s.full} · ${s.set} · 2024</div>
+      <div class="sbio">${s.bio}</div>
+      <div class="sco" onclick="event.stopPropagation()">
+        ${s.phone?`<a href="${pl}" class="cp">📞 Call</a>`:''}
+        ${s.wa?`<a href="${wl}" target="_blank" class="cwa">💬 WhatsApp</a>`:''}
+        <a class="cpr" href="#" onclick="event.preventDefault();openProf(${s.id});">👤 Profile</a>
+      </div>
+    </div>
+  </div>`;
+}
+
+// ===== FILTER =====
+function getFiltered(nid,hid,sid,soid){
+  let n=(document.getElementById(nid)||{value:''}).value.toLowerCase();
+  let h=(document.getElementById(hid)||{value:''}).value;
+  let s=(document.getElementById(sid)||{value:''}).value;
+  let so=(document.getElementById(soid)||{value:'name'}).value;
+  let arr=STUDENTS.filter(x=>
+    (!n||x.name.toLowerCase().includes(n)||x.full.toLowerCase().includes(n)||(x.addr||'').toLowerCase().includes(n)||(x.bio||'').toLowerCase().includes(n)||(x.phone||'').includes(n))&&
+    (!h||x.house===h)&&(!s||x.set===s));
+  if(so==='name')arr.sort((a,b)=>a.name.localeCompare(b.name));
+  else if(so==='house')arr.sort((a,b)=>a.house.localeCompare(b.house));
+  else arr.sort((a,b)=>a.set.localeCompare(b.set));
+  return arr;
+}
+function render(arr,gid,eid){
+  document.getElementById(gid).innerHTML=arr.map(card).join('');
+  document.getElementById(eid).style.display=arr.length?'none':'block';
+}
+function doFilter(){render(getFiltered('fn','fh','fs','fso'),'grid1','empty1');}
+function doFilter2(){render(getFiltered('fn2','fh2','fs2','fso2'),'grid2','empty2');}
+function resetF(){['fn','fh','fs','fso'].forEach(id=>{const e=document.getElementById(id);if(e)e.value='';});doFilter();}
+function resetF2(){['fn2','fh2','fs2','fso2'].forEach(id=>{const e=document.getElementById(id);if(e)e.value='';});doFilter2();}
+
+// ===== INIT =====
+doFilter();doFilter2();
+
+// ===== WA GROUPS =====
+function renderWa(){
+  document.getElementById('wgg').innerHTML=WA_GROUPS.map(g=>`
+    <div class="wgc">
+      <div class="wgh"><div class="wi">${g.emoji}</div><div><div class="wt">${g.name}</div><div class="wc">${g.count}</div></div></div>
+      <div class="wgb"><p>${g.desc||''}</p><a href="${g.link}" target="_blank" class="bwf" style="border-radius:25px;font-size:12px;">📲 Join Group</a></div>
+    </div>`).join('');
+}
+renderWa();
+
+function addGroup(){
+  const n=document.getElementById('wgn').value.trim();
+  const l=document.getElementById('wgl').value.trim();
+  const d=document.getElementById('wgd').value.trim();
+  if(!n||!l){alert('Please fill in the group name and invite link.');return;}
+  WA_GROUPS.push({name:n,link:l,emoji:'💬',desc:d||'New group added by classmate.',count:'New'});
+  renderWa();
+  ['wgn','wgl','wgd'].forEach(id=>document.getElementById(id).value='');
+}
+
+// ===== SECTIONS =====
+function showSec(s){
+  ['dash','cls','wa'].forEach(id=>document.getElementById('sec-'+id).style.display='none');
+  document.getElementById('sec-'+s).style.display='block';
+  document.querySelectorAll('.nav a').forEach((a,i)=>{
+    a.classList.toggle('active',['dash','cls','wa'][i]===s);
+  });
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+
+// ===== PROFILE MODAL =====
+function openProf(id){
+  const s=STUDENTS.find(x=>x.id===id);if(!s)return;
+  const wl=s.wa?`https://wa.me/${s.wa}`:'#';
+  const pl=s.phone?`tel:${s.phone.replace(/\s/g,'')}`:'#';
+  document.getElementById('pmName').textContent=s.name;
+  document.getElementById('pmSub').textContent=`${s.house} House · ${s.set} · Class of 2024`;
+  document.getElementById('pmFull').textContent=s.full;
+  document.getElementById('pmSet').textContent=s.set;
+  document.getElementById('pmHouse').textContent=s.house+' House';
+  document.getElementById('pmPhone').textContent=s.phone||'—';
+  document.getElementById('pmPhone').href=pl;
+  document.getElementById('pmWa').href=wl;
+  document.getElementById('pmAddr').textContent=s.addr||'—';
+  document.getElementById('pmBio').textContent=s.bio||'—';
+  document.getElementById('pmWaBtn').href=wl;
+  document.getElementById('pmCallBtn').href=pl;
+  const av=document.getElementById('pmAv');
+  av.innerHTML=s.img?`<img src="${s.img}" alt="${s.name}" onerror="this.parentElement.textContent='🎓'">`:'🎓';
+  document.getElementById('profMo').classList.add('active');
+}
+function closePM(e){if(e.target===document.getElementById('profMo'))document.getElementById('profMo').classList.remove('active');}
+
+// ===== LOGIN =====
+function openLogin(){document.getElementById('loginMo').classList.add('active');}
+function closeLogin(){document.getElementById('loginMo').classList.remove('active');}
+function closeLO(e){if(e.target===document.getElementById('loginMo'))closeLogin();}
+function doLogin(){
+  const u=document.getElementById('liu').value.trim();
+  if(!u){document.getElementById('liu').focus();return;}
+  alert(`Welcome back, ${u}! Loading your EMMS 2024 Yearbook…`);closeLogin();
+}
+
+// ===== REGISTER =====
+function openRegister(){document.getElementById('regMo').classList.add('active');}
+function closeRegBg(e){if(e.target===document.getElementById('regMo'))document.getElementById('regMo').classList.remove('active');}
+function doRegister(){
+  const n=document.getElementById('rname').value.trim();
+  const u=document.getElementById('ru').value.trim();
+  if(!n||!u){alert('Please fill in at least your full name and username.');return;}
+  const wa=document.getElementById('rwa').value.replace(/\D/g,'');
+  const ns={
+    id:STUDENTS.length+1,user:u,
+    name:n.split(' ').slice(0,2).join(' '),full:n,
+    house:document.getElementById('rhouse').value||'Green',
+    set:document.getElementById('rset').value||'SS3A',
+    phone:document.getElementById('rphone').value.trim(),wa,
+    addr:document.getElementById('raddr').value.trim(),
+    bio:document.getElementById('rbio').value.trim(),img:""
+  };
+  STUDENTS.push(ns);doFilter();doFilter2();
+  document.getElementById('regMo').classList.remove('active');
+  alert(`🎉 Welcome to EMMS 2024, ${n.split(' ')[0]}! Your profile is live.`);
+}
+
+// ===== STAT COUNTERS =====
+document.querySelectorAll('.sn2').forEach(el=>{
+  const t=+el.dataset.t;let c=0,inc=t/40;
+  const tm=setInterval(()=>{c+=inc;if(c>=t){c=t;clearInterval(tm);}el.textContent=Math.floor(c);},30);
+});
+</script>
+</body>
+</html>
